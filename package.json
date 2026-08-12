@@ -1,0 +1,14 @@
+{
+  "name": "tg-claude-bot",
+  "version": "1.0.0",
+  "description": "Telegram group bot powered by the Claude API - answers when mentioned, summarizes on request",
+  "type": "module",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "@anthropic-ai/sdk": "^0.32.1"
+  }
+}
