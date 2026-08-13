@@ -154,6 +154,10 @@ bot.on("message", async (msg) => {
   const senderName =
     msg.from.username || msg.from.first_name || "someone";
 
+  console.log(
+    `[incoming] chat=${chatId} type=${msg.chat.type} from=${senderName} text="${msg.text}"`
+  );
+
   // Log every message for context/summary purposes
   pushHistory(chatId, { name: senderName, text: msg.text, ts: msg.date });
 
